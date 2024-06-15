@@ -1,4 +1,3 @@
-streamlit_code = """
 import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
@@ -36,11 +35,3 @@ if uploaded_file is not None:
         st.write("This image is classified as: Real")
     else:
         st.write("This image is classified as: Fake")
-"""
-
-# Save the Streamlit app code to a .py file
-streamlit_app_path = '/mnt/data/streamlit_app.py'
-with open(streamlit_app_path, 'w') as f:
-    f.write(streamlit_code)
-
-streamlit_app_path
